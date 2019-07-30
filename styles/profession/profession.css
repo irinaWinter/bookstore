@@ -1,0 +1,5 @@
+.profession {
+	padding: 10px 45px;
+	display: flex;
+	flex-wrap: wrap;
+}

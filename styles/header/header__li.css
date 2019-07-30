@@ -1,0 +1,11 @@
+.header__li {
+	margin-right: 60px;
+	font-family: "Roboto", sans-serif;
+	cursor: pointer;
+}
+.header__li:last-child {
+	margin-right: 0;
+}
+.header__li:hover {
+	color: #8b619e;
+}
