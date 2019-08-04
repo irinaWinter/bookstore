@@ -1,0 +1,9 @@
+.text__a {
+	text-decoration: none;
+	color: #a88bb5;
+}
+.text__a:hover {
+	text-decoration: underline;
+	text-underline-position: under;
+}
+

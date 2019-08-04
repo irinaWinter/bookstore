@@ -1,3 +1,20 @@
+@import "common/container.css";
+@import "common/main.css";
+@import "common/popup.css";
+@import "common/books.css";
+@import "common/text.css";
+@import "common/text__li.css";
+@import "common/text__ul.css";
+@import "common/text__a.css";
+@import "common/aboutUs.css";
+@import "common/contacts.css";
+
+@import "info/info.css";
+
+@import "dots/dots.css";
+@import "dots/dots__item.css";
+
+
 @import "body/body.css";
 
 @import "search/search.css";
@@ -8,10 +25,49 @@
 @import "profession/profession__item.css";
 @import "profession/profession__item_selected.css";
 
-
-
 @import "header/header.css";
 @import "header/header__logo.css";
 @import "header/header__nav.css";
 @import "header/header__ul.css";
 @import "header/header__li.css";
+@import "header/header__li_active.css";
+
+@import "banner/banner.css";
+@import "banner/banner__welcome.css";
+@import "banner/banner__text.css";
+@import "banner/banner__greeting.css";
+@import "banner/banner__instruction.css";
+@import "banner/banner__ol.css";
+@import "banner/banner__li.css";
+@import "banner/banner__link.css";
+
+@import "section/section.css";
+@import "section/section__heading.css";
+
+@import "book/book.css";
+@import "book/book__author.css";
+@import "book/book__img.css";
+@import "book/book__name.css";
+@import "book/book__price.css";
+
+@import "detail/detail.css";
+@import "detail/detail__annotation.css";
+@import "detail/detail__author.css";
+@import "detail/detail__close.css";
+@import "detail/detail__img.css";
+@import "detail/detail__info.css";
+@import "detail/detail__name.css";
+@import "detail/detail__price.css";
+@import "detail/detail__text.css";
+@import "detail/detail__illustration.css";
+@import "detail/dots_detail.css";
+@import "detail/dots__item_detail.css";
+
+@import "footer/footer.css";
+@import "footer/footer__nav.css";
+@import "footer/footer__ul.css";
+@import "footer/footer__li.css";
+
+@import "developer/developer.css";
+@import "developer/developer__text.css";
+@import "developer/developer__link.css";

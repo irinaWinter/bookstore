@@ -1,0 +1,7 @@
+.developer__link {
+	text-decoration: none;
+	color: #ababab;
+}
+.developer__link:hover {
+	color: #9471a3;
+}

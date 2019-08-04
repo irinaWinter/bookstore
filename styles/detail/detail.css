@@ -1,0 +1,9 @@
+.detail {
+	display: flex;
+	position: relative;
+	width: 716px;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 30px;
+	box-sizing: border-box;
+}

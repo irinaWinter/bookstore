@@ -1,0 +1,9 @@
+.text__li:before {
+	content: "– ";
+}
+
+.text__li {
+	list-style-type: none;
+	font-size: 20px;
+	line-height: 32px;
+}

@@ -1,0 +1,8 @@
+.footer {
+	margin-top: 50px;
+	padding: 50px 0;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	background-color: #000;
+}

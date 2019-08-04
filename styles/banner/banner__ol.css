@@ -1,0 +1,4 @@
+.banner__ol: {
+	display: flex;
+	flex-direction: column;
+}
