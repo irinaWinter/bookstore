@@ -3,7 +3,7 @@ var books = [
 		img: "book",
 		name: "Язык творчества",
 		author: "Феодор Леонид",
-		prize: 500,
+		price: 500,
 		specialty: "42.02.02 Дизайн (по отраслям)",
 		year: 2019,
 		format: "60x90/16",
