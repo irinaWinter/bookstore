@@ -25,4 +25,6 @@ function renderBook(element) {
 	console.log(img.src);
 }
 
-renderBook(books[0]);
+books.forEach(function(i){
+	renderBook(i);
+});
