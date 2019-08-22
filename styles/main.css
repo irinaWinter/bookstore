@@ -8,6 +8,8 @@
 @import "common/text__a.css";
 @import "common/aboutUs.css";
 @import "common/contacts.css";
+@import "common/hide.css";
+@import "common/show.css";
 
 @import "info/info.css";
 

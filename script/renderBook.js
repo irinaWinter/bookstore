@@ -1,29 +1,56 @@
+
+var main = document.querySelector('main');
+
+var container = document.createElement('div');
+container.className = "container books hide";
+
+var section = document.createElement('div');
+section.className = "section";
+
+var heading = document.createElement('h2');
+heading.className = "section__heading";
+heading.textContent = "Издания";
+
+main.append(container);
+container.append(section);
+section.append(heading);
+
+
+
+
 function renderBook(element) {
-	var div = document.createElement('div');
-	div.className = "book";
-	document.body.append(div);
+
+	var book = document.createElement('div');
+	book.className = "book";
+
+
+	section.append(book);
 
 	var img = document.createElement('img');
 	img.src = "img/" + element.img + ".jpg";
 	img.className = "book__img";
-	div.append(img);
+	book.append(img);
 
 	var price = document.createElement('p');
 	price.textContent = element.price + " ₽";
 	price.className = "book__price";
-	div.append(price);
+	book.append(price);
 
 	var name = document.createElement('p');
 	name.textContent = element.name;
 	name.className = "book__name";
-	div.append(name);
+	book.append(name);
 
 	var author = document.createElement('p');
 	author.textContent = element.author;
 	author.className = "book__author";
-	div.append(author);
+	book.append(author);
 	console.log(img.src);
-}
+};
+
+
+
+
 
 books.forEach(function(i){
 	renderBook(i);
