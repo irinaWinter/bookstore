@@ -2,7 +2,7 @@
 var main = document.querySelector('main');
 
 var container = document.createElement('div');
-container.className = "container books hide";
+container.className = "container";
 
 var section = document.createElement('div');
 section.className = "section";

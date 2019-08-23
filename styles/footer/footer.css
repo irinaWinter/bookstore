@@ -5,4 +5,5 @@
 	box-sizing: border-box;
 	display: flex;
 	background-color: #000;
+	align-self: flex-end;
 }
