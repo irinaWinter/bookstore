@@ -70,6 +70,7 @@
 @import "footer/footer__nav.css";
 @import "footer/footer__ul.css";
 @import "footer/footer__li.css";
+@import "footer/footer__profession.css";
 
 @import "developer/developer.css";
 @import "developer/developer__text.css";
