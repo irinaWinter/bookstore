@@ -7,7 +7,7 @@ container.className = "container";
 var section = document.createElement('div');
 section.className = "section";
 
-var heading = document.createElement('h2');
+var heading = document.createElement('h2'); // прописать в html !!!
 heading.className = "section__heading";
 heading.textContent = "Издания";
 
@@ -19,7 +19,6 @@ section.append(heading);
 
 
 function renderBook(element) {
-
 	var book = document.createElement('div');
 	book.className = "book";
 
@@ -45,7 +44,6 @@ function renderBook(element) {
 	author.textContent = element.author;
 	author.className = "book__author";
 	book.append(author);
-	console.log(img.src);
 };
 
 
