@@ -3,28 +3,27 @@ var profession__item_selected = document.querySelectorAll('.profession__item_sel
 var myBooks = document.querySelectorAll('.book');
 
 
-
 for (var j = 0; j < profession__item.length; j++) {
 	profession__item[j].addEventListener('click', function () {
 		_this = this;
 		this.classList.toggle('profession__item_selected');
 
 		if (this.classList.contains("profession__item_selected")) {
+			books.forEach(function(element, index) {
+				if (element.specialty == _this.getAttribute("Name")) {
 
-			books.forEach(function(i) {
-				if (i.specialty == _this.getAttribute("Name")) {
-					myBooks[?].classList.add("hide");
-					console.log(i.specialty + " " + myBooks[j]);
 				} else {
-					myBooks[?].classList.add("hide");
-					console.log('Скрыто' + " " + myBooks[j])
-				}
-			})
-
-			// console.log(this.getAttribute("Name"));
-
+					myBooks[index].classList.add("hide");	
+				}	
+			});
 		} else {
-			console.log('no');
+			books.forEach(function(element, index) {
+				if (element.specialty == _this.getAttribute("Name")) {
+
+				} else {
+					myBooks[index].classList.remove("hide");	
+				}	
+			});
 		}
 	});
 }
