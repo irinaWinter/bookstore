@@ -4,29 +4,40 @@ var myBooks = document.querySelectorAll('.book');
 
 
 for (var j = 0; j < profession__item.length; j++) {
+
 	profession__item[j].addEventListener('click', function () {
+		
+		
+		
+
 		_this = this;
 		this.classList.toggle('profession__item_selected');
 
-		if (this.classList.contains("profession__item_selected")) {
-			books.forEach(function(element, index) {
-				if (element.specialty == _this.getAttribute("Name")) {
 
-				} else {
-					myBooks[index].classList.add("hide");	
-				}	
-			});
-		} else {
-			books.forEach(function(element, index) {
-				if (element.specialty == _this.getAttribute("Name")) {
 
-				} else {
-					myBooks[index].classList.remove("hide");	
-				}	
+		// if (this.classList.contains("profession__item_selected")) {
+		// 	books.forEach(function(element, index) {
+		// 		if (element.specialty == _this.getAttribute("Name")) {
+
+		// 		} else {
+		// 			myBooks[index].classList.add("hide");	
+		// 		}	
+		// 	});
+		// } else {
+		// 	books.forEach(function(element, index) {
+		// 		if (element.specialty == _this.getAttribute("Name")) {
+
+		// 		} else {
+		// 			myBooks[index].classList.remove("hide");	
+		// 		}	
+
+
 			});
-		}
-	});
-}
+		// }
+
+console.log(profession__item_selected.length);
+};
+
 
 
 // 	for (var j = 0; j < profession__item_selected.length; j++) {
