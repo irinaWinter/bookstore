@@ -1,52 +1,34 @@
-var profession__item = document.querySelectorAll('.profession__item');
-var myBooks = document.querySelectorAll('.book');
-var profession__item_selected;
+var profession__item =  document.querySelectorAll('.profession__item');
 
-
-for (var j = 0; j < profession__item.length; j++) {
-
-	profession__item[j].addEventListener('click', function () {
-		var _this = this;
-		if (profession__item_selected == undefined) {
-			this.classList.toggle('profession__item_selected');
-			profession__item_selected = document.querySelectorAll('.profession__item_selected');
-		
-			books.forEach(function(element, index) {
-				if (element.specialty !== _this.getAttribute("Name")) {
-					myBooks[index].classList.add("hide");	
-				} 
-			});
+var filter = {
+	profession__item_selected: document.querySelectorAll('.profession__item_selected'),
+	myBooks: document.querySelectorAll('.book'),
+	selected: false,
+	checkSpecialty: undefined,
+	setSelect: function(eventObj) {
+		if (!this.selected) {
+			eventObj.classList.add('profession__item_selected');
+			element = eventObj;
+			this.selected = true;
+			this.showSpecialty = eventObj;
+			// this.checkSpecialty = eventObj.getAttribute("name"); 
 		} else {
-			profession__item.forEach(function(e) {
-				e.classList.remove("profession__item_selected");
-			});
+			element.classList.remove('profession__item_selected');
+			this.selected = false;
+			this.setSelect(eventObj);
+		}
+	},
+	sort: function(checkSpecialty) {
+		console.log(checkSpecialty);
+	}
+}
 
-
-				// Переписать
-
-			this.classList.toggle('profession__item_selected');		
-			books.forEach(function(element, index) {
-				if (element.specialty !== _this.getAttribute("Name")) {
-					myBooks[index].classList.add("hide");	
-				} 
-			});
-			
-		}	
+profession__item.forEach(function(e) {	
+	e.addEventListener("click", function() {
+		filter.setSelect(e);
+		// filter.sort();
 	});
-};
+});
 
 
 
-// 	for (var j = 0; j < profession__item_selected.length; j++) {
-// 	profession__item_selected[j].addEventListener('click', function() {
-// 		console.log(this.getAttribute("Name"));
-// 	})
-		
-
-// }
-
-	// if (this.classList.contains("profession__item_selected")) {
-	// 	books.forEach(function(i){
-	// 		renderBook(i);
-	// 	});
-	// }
