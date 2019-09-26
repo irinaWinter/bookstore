@@ -1,7 +1,6 @@
 var profession__item =  document.querySelectorAll('.profession__item');
 
 var filter = {
-	myBooks: document.querySelectorAll('.book'),
 	selected: false,
 	checkSpecialty: undefined,
 	setSelect: function(eventObj) {
@@ -20,11 +19,11 @@ var filter = {
 	sort: function() {
 		for (var i = 0; i < books.length; i++) {
 			if (this.checkSpecialty === "all") {
-				this.myBooks[i].classList.remove("hide");
+				myBooks[i].classList.remove("hide");
 			} else if (books[i].specialty !== this.checkSpecialty) {
-				this.myBooks[i].classList.add("hide");
+				myBooks[i].classList.add("hide");
 			} else {
-				this.myBooks[i].classList.remove("hide");
+				myBooks[i].classList.remove("hide");
 			}
 		}
 	}
