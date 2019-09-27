@@ -20,7 +20,7 @@ var filter = {
 		for (var i = 0; i < books.length; i++) {
 			if (this.checkSpecialty === "all") {
 				myBooks[i].classList.remove("hide");
-			} else if (books[i].specialty !== this.checkSpecialty) {
+			} else if (books[i].specialty.indexOf(this.checkSpecialty) == -1) {
 				myBooks[i].classList.add("hide");
 			} else {
 				myBooks[i].classList.remove("hide");
@@ -29,12 +29,20 @@ var filter = {
 	}
 }
 
+// дефолтное значение (Все специальности)
+window.onload = function() {
+	filter.setSelect(profession__item[8]);
+	filter.sort();
+}
+
+
 profession__item.forEach(function(e) {	
 	e.addEventListener("click", function() {
 		filter.setSelect(e);
 		filter.sort();
 	});
 });
+
 
 
 
