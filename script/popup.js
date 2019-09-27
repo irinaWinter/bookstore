@@ -111,7 +111,7 @@ var createPopup = {
 		// переиздание
 		
 			detail__reissue.className = "detail__info";
-			detail__reissue.textContent = "Количество периизданий: " + element.reissue;
+			detail__reissue.textContent = "Количество переизданий: " + element.reissue;
 			detail__text.append(detail__reissue);
 	},
 	close: function() {
