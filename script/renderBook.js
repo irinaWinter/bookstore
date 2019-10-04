@@ -7,22 +7,17 @@ container.className = "container";
 var section = document.createElement('div');
 section.className = "section";
 
-var heading = document.createElement('h2'); // прописать в html !!!
-heading.className = "section__heading";
-heading.textContent = "Издания";
+// var heading = document.createElement('h2'); // прописать в html !!!
+// heading.className = "section__heading";
+// heading.textContent = "Издания";
 
 main.append(container);
 container.append(section);
-section.append(heading);
-
-
-
+// section.append(heading);
 
 function renderBook(element) {
 	var book = document.createElement('div');
 	book.className = "book";
-
-
 	section.append(book);
 
 	var img = document.createElement('img');
@@ -45,10 +40,6 @@ function renderBook(element) {
 	author.className = "book__author";
 	book.append(author);
 };
-
-
-
-
 
 books.forEach(function(i){
 	renderBook(i);

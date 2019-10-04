@@ -26,14 +26,28 @@ var filter = {
 				myBooks[i].classList.remove("hide");
 			}
 		}
+	},
+	showPopular: function() {
+		for (var i = 0; i < books.length; i++) {
+			if (books[i].popular) {
+				myBooks[i].classList.remove("hide");
+			} else {
+				myBooks[i].classList.add("hide");
+			}
+		}		
+	},
+	showNew: function() {
+		for (var i = 0; i < books.length; i++) {
+			if (books[i].new) {
+				myBooks[i].classList.remove("hide");
+			} else {
+				myBooks[i].classList.add("hide");
+			}
+		}
 	}
-}
+};
 
 // дефолтное значение (Все специальности)
-window.onload = function() {
-	filter.setSelect(profession__item[8]);
-	filter.sort();
-}
 
 
 profession__item.forEach(function(e) {	
