@@ -1,19 +1,5 @@
 
-var main = document.querySelector('main');
-
-var container = document.createElement('div');
-container.className = "container";
-
-var section = document.createElement('div');
-section.className = "section";
-
-// var heading = document.createElement('h2'); // прописать в html !!!
-// heading.className = "section__heading";
-// heading.textContent = "Издания";
-
-main.append(container);
-container.append(section);
-// section.append(heading);
+var section = document.querySelector('.section');
 
 function renderBook(element) {
 	var book = document.createElement('div');
@@ -41,6 +27,4 @@ function renderBook(element) {
 	book.append(author);
 };
 
-books.forEach(function(i){
-	renderBook(i);
-});
+		

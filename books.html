@@ -38,6 +38,9 @@
 	</header>
 
 	<main class="main">
+		<div class="container">
+			<div class="section"></div>
+		</div>
 	</main>
 <!-- 
 	<footer class="footer">
@@ -70,12 +73,19 @@
 
 	<script src="script/books.js"></script>
 	<script src="script/renderBook.js"></script>
+	<script>
+		books.forEach(function(i){
+			renderBook(i);
+		});
+	</script>
 	<script src="script/filter.js"></script>
 	<script src="script/popup.js"></script>
 	<script src="script/search.js"></script>
 
 	<script>
+
 		window.onload = function() {
+
 			filter.setSelect(profession__item[8]);
 			filter.sort();
 		}

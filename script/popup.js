@@ -116,5 +116,3 @@ popup.addEventListener("click", function(event) {
 		createPopup.close();
 	}
 })
-
-
