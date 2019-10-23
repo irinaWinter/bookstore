@@ -1,5 +1,5 @@
 var profession__item =  document.querySelectorAll('.profession__item');
-
+var defaultValue = profession__item[8]; 
 var filter = {
 	selected: false,
 	checkSpecialty: undefined,
@@ -8,7 +8,7 @@ var filter = {
 			eventObj.classList.add('profession__item_selected');
 			element = eventObj;
 			this.selected = true;
-			this.showSpecialty = eventObj;
+			// this.showSpecialty = eventObj;
 			this.checkSpecialty = eventObj.getAttribute("name"); 
 		} else {
 			element.classList.remove('profession__item_selected');
@@ -50,13 +50,12 @@ var filter = {
 // дефолтное значение (Все специальности)
 
 
-profession__item.forEach(function(e) {	
+profession__item.forEach(function(e, i) {	
 	e.addEventListener("click", function() {
 		filter.setSelect(e);
 		filter.sort();
 	});
 });
-
 
 
 

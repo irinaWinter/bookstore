@@ -26,6 +26,7 @@
 @import "profession/profession.css";
 @import "profession/profession__item.css";
 @import "profession/profession__item_selected.css";
+@import "profession/profession__link.css";
 
 @import "header/header.css";
 @import "header/header__logo.css";
