@@ -1,0 +1,17 @@
+.instruction__item {
+	margin: 0;
+	padding: 0;
+	width: 300px;
+}
+
+.instruction__item:before {
+	content: "";
+	position: absolute;
+	/*display: block;*/
+	top: center;
+	left: -70px;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}

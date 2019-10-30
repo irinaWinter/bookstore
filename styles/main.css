@@ -40,10 +40,10 @@
 @import "banner/banner__welcome.css";
 @import "banner/banner__text.css";
 @import "banner/banner__greeting.css";
-@import "banner/banner__instruction.css";
-@import "banner/banner__ol.css";
-@import "banner/banner__li.css";
-@import "banner/banner__link.css";
+
+@import "instruction/instruction.css";
+@import "instruction/instruction__item.css";
+
 
 @import "section/section.css";
 @import "section/section__heading.css";
