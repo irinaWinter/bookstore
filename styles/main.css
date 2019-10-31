@@ -44,6 +44,7 @@
 @import "instruction/instruction.css";
 @import "instruction/instruction__item.css";
 
+@import "button/button.css";
 
 @import "section/section.css";
 @import "section/section__heading.css";
