@@ -8,8 +8,9 @@ var filter = {
 			eventObj.classList.add('profession__item_selected');
 			element = eventObj;
 			this.selected = true;
-			// this.showSpecialty = eventObj;
-			this.checkSpecialty = eventObj.getAttribute("name"); 
+			this.showSpecialty = eventObj;
+			// this.checkSpecialty = eventObj.getAttribute("name"); 
+			this.checkSpecialty = eventObj.textContent; 
 		} else {
 			element.classList.remove('profession__item_selected');
 			this.selected = false;

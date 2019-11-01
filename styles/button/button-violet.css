@@ -1,0 +1,11 @@
+.button-violet {
+	color: #8a69c6;
+	background-color: transparent;
+	border: 2px solid  #8a69c6;
+}
+
+.button-violet:hover {
+	color: #fff;
+	background-color: #8a69c6;
+	border: 2px solid  #8a69c6;
+}

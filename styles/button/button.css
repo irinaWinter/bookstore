@@ -1,12 +1,19 @@
 .button {
 	display: block;
+	box-sizing: border-box;
 	margin: 0 auto;
 	margin-top: 60px;
 	padding: 25px 0;
+	width: 290px;
+	background-color: #fff;
+	border: 2px solid #fff;
+	border-radius: 40px;
 	text-align: center;
 	font-size: 24px;
 	text-decoration: none;
-	width: 290px;
-	background-color: #fff;
-	border-radius: 40px;
+	color: #8a69c6;
+}
+.button:hover {
+	color: #fff;
+	background-color: transparent;
 }
