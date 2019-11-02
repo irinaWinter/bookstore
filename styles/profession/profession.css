@@ -1,4 +1,5 @@
 .profession {
+	align-self: flex-start;
 	padding: 0 45px;
 	display: flex;
 	flex-wrap: wrap;

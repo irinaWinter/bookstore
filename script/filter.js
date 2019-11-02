@@ -19,7 +19,7 @@ var filter = {
 	},
 	sort: function() {
 		for (var i = 0; i < books.length; i++) {
-			if (this.checkSpecialty === "all") {
+			if (this.checkSpecialty === "Все специальности") {
 				myBooks[i].classList.remove("hide");
 			} else if (books[i].specialty.indexOf(this.checkSpecialty) == -1) {
 				myBooks[i].classList.add("hide");
