@@ -32,10 +32,35 @@ var books = [
 	"annotation":"Данные методические указания предназначены в помощь студентам I курса при выполнении лабораторных работ по химии. Лабораторные работы помогают студентам усвоить законы и основные теоретические положения химии, знакомят со свойствами важнейших веществ, прививают навыки выполнения простейших химических экспериментов.",
 	"reissue":"самостоятельное издание", "new":true, "popular": true},
 
-{"name":"Компьютерная графика","author":"Дорощенко М. А.","type":"Курс лекций","specialty":"Полиграфическое производство","price":250,"img":"book","year":2014,"format":"60х84/16","pages":236,"annotation":null,"reissue":null, "new":false, "popular": false},
-{"name":"Композиция","author":"Кузьмина Т. М.","type":"Учебное пособие","specialty":"Полиграфическое производство","price":170,"img":"book","year":2014,"format":"60х84/16","pages":60,"annotation":null,"reissue":null, "new":false, "popular": false},
-{"name":"Качество и потребительская безопасность продукции","author":"Терехова Л. В.","type":"Курс лекций","specialty":"Производство изделий из бумаги и картона","price":150,"img":"book","year":2014,"format":"60х84/16","pages":76,"annotation":null,"reissue":null, "new":false},
-{"name":"Краткий курс физико-химических основ полиграфического производства","author":"Бурсак С. С.","type":"Учебное пособие","specialty":"Производство изделий из бумаги и картона","price":250,"img":"physics_2017","year":2017,"format":"60х84/16","pages":160,"annotation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","reissue":null, "new":false, "popular": true},
+{"name":"Компьютерная графика","author":"Дорощенко М. А.","type":"Курс лекций","specialty":"Графический дизайнер","price":250,
+	"img":"book","year":2018,"format":"60х84/16","pages":152,
+	"annotation":"Данный курс лекций разработан на основе примерной рабочей программы по дисциплине «Компьютерная графика». Составлен на основе государственных стандартов и предназначен для студентов специальности 54.01.20 Графический дизайнер. Издание знакомит с основами компьютерной графики, рассматривает векторную графику в программе Adobe Illustrator, а также растровую графику в программе Adobe Photoshop.",
+	"reissue":"самостоятельное издание", "new":false, "popular": true},
+
+{"name":"Английский язык. Профессиональная лексика","author":"Юшкевич А. А.","type":"Методическое пособие",
+	"specialty":"Дизайн (по отраслям), Полиграфическое производство",
+	"price":170,"img":"english-language","year":2018,"format":"60х84/16","pages":32,
+	"annotation":"методическое пособие направленно на снятие языкового барьера у студентов и обогащение их лексического запаса. В сборник включены тексты, статьи из аутентичных англо-язычных источников и упражнения к ним. Представленные статьи содержат широко используемую терминологию по направлениям полиграфии и дизайна, включая материал по допечатным процессам и технологии печати. Методическое пособие состоит из 10 уроков (units) и приложений с дополнительными текстами для самостоятельной работы.",
+	"reissue":"самостоятельное издание", "new":false, "popular": false},
+
+{"name":"Материаловедение","author":"Попова Н. В.","type":"Методические указания к выполнению практических работ",
+	"specialty":"Дизайн (по отраслям), Издательское дело","price":150,"img":"materials-science","year":2019,"format":"60х84/16","pages":16,
+	"annotation":"Издание содержит задания для практических работ, а также указаня к их выполнению.",
+	"reissue":"самостоятельное издание", "new":false},
+
+{"name":"Математика","author":"Ромбах О. Б.","type":"Методическое пособие",
+	"specialty":"Все специальности","price":250,"img":"maths","year":2018,"format":"60х84/16","pages":72,
+	"annotation": "Методические рекомендации состоят из пяти разделов: Дифференциальное исчисление, Вычисление предела функции с помощью правила Лопиталя, Интегральное исчисление, Дифференциальные уравнения, Теория вероятностей. Издание содержит теоретический материал, большое количество рекомендаций и способов решения типовых задач, примеров и тренажеров для решения.",
+	"reissue":"самостоятельное издание", "new":false, "popular": true},
+
+
+
+
+{"name":"Краткий курс физико-химических основ полиграфического производства","author":"Бурсак С. С.","type":"Учебное пособие",
+	"specialty":"Производство изделий из бумаги и картона","price":250,"img":"physics_2017","year":2017,"format":"60х84/16","pages":160,
+	"annotation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+	"reissue":null, "new":false, "popular": true},	
+
 {"name":"Метрология и стандартизация","author":"Фолиев В. С. ","type":"Курс лекций","specialty":"Производство изделий из бумаги и картона","price":150,"img":"book","year":2013,"format":"60х84/16","pages":84,"annotation":null,"reissue":null, "new":false, "popular": false},
 {"name":"Мультимедийные технологии","author":"Дорощенко М. А.","type":"Курс лекций","specialty":"Дизайн (по отраслям)","price":200,"img":"book","year":2014,"format":"60х84/16","pages":116,"annotation":null,"reissue":null, "new":false, "popular": false},
 {"name":"Оборудование печатных процессов","author":"Румянцев В. Н., Попова Н. В.","type":"Учебник","specialty":"Дизайн (по отраслям)","price":300,"img":"book","year":2015,"format":"60х84/16","pages":260,"annotation":null,"reissue":null, "new":false, "popular": true},
