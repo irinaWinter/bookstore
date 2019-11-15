@@ -43,6 +43,8 @@
 
 @import "instruction/instruction.css";
 @import "instruction/instruction__item.css";
+@import "instruction/instruction__remarks.css";
+@import "instruction/instruction__link.css";
 
 @import "button/button.css";
 @import "button/button-violet.css";
